@@ -37,32 +37,32 @@ $_SESSION['token_time'] = time();
       scale[0]  = "Geistige Anforderung";
       left[0]   = "Gering";
       right[0]  = "Hoch";
-      def[0]    = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Wie viel geistige Anforderung war bei der Informationsaufnahme und bei der Informationsverarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen, Erinnern, Hinsehen, Suchen ...)? War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex, erfordert sie hohe Genauigkeit oder ist sie fehlertolerant?'></i>";
+      def[0]    = "Wie viel geistige Anforderung war bei der Informationsaufnahme und bei der Informationsverarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen, Erinnern, Hinsehen, Suchen ...)? War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex, erfordert sie hohe Genauigkeit oder ist sie fehlertolerant?";
 
       scale[1]  = "Körperliche Anforderung";
       left[1]   = "Gering";
       right[1]  = "Hoch";
-      def[1]    = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Wie viel körperliche Aktivität war erforderlich (z.B. ziehen, drücken, drehen, steuern, aktivieren ...)? War die Aufgabe leicht oder schwer, einfach oder anstrengend, erholsam oder mühselig?'></i>";
+      def[1]    = "Wie viel körperliche Aktivität war erforderlich (z.B. ziehen, drücken, drehen, steuern, aktivieren ...)? War die Aufgabe leicht oder schwer, einfach oder anstrengend, erholsam oder mühselig?";
 
       scale[2]  = "Zeitliche Anforderung";
       left[2]   = "Gering";
       right[2]  = "Hoch";
-      def[2]    = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Wie viel Zeitdruck empfanden Sie hinsichtlich der Häufigkeit oder dem Takt mit dem die Aufgaben oder Aufgabenelemente auftraten? War die Aufgabe langsam und geruhsam oder schnell und hektisch?'></i>";
+      def[2]    = "Wie viel Zeitdruck empfanden Sie hinsichtlich der Häufigkeit oder dem Takt mit dem die Aufgaben oder Aufgabenelemente auftraten? War die Aufgabe langsam und geruhsam oder schnell und hektisch?";
 
       scale[3]  = "Leistung";
       left[3]   = "Gut";
       right[3]  = "Schlecht";
-      def[3]    = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Wie erfolgreich haben Sie Ihrer Meinung nach die vom Versuchsleiter (oder Ihnen selbst) gesetzten Ziele erreicht? Wie zufrieden waren Sie mit Ihrer Leistung bei der Verfolgung dieser Ziele?'></i>";
+      def[3]    = "Wie erfolgreich haben Sie Ihrer Meinung nach die vom Versuchsleiter (oder Ihnen selbst) gesetzten Ziele erreicht? Wie zufrieden waren Sie mit Ihrer Leistung bei der Verfolgung dieser Ziele?";
 
       scale[4]  = "Anstrengung";
       left[4]   = "Gering";
       right[4]  = "Hoch";
-      def[4]    = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerfüllung zu erreichen?'></i>";
+      def[4]    = "Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerfüllung zu erreichen?";
 
       scale[5]  = "Frustration";
       left[5]   = "Gering";
       right[5]  = "Hoch";
-      def[5]    = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Wie unsicher, entmutigt, irritiert, gestresst und verörgert (versus sicher, bestätigt, zufrieden, entspannt und zufrieden mit sich selbst) fühlten Sie sich während der Aufgabe?'></i>";
+      def[5]    = "Wie unsicher, entmutigt, irritiert, gestresst und verörgert (versus sicher, bestätigt, zufrieden, entspannt und zufrieden mit sich selbst) fühlten Sie sich während der Aufgabe?";
 
       var scale_error = 'Für jede Skala muss ein Wert gewählt werden!';
     </script>
@@ -111,7 +111,7 @@ $_SESSION['token_time'] = time();
           <div id="scale5"></div>
 
           <br>
-          <input class="next btn btn-primary pull-right" id="next" type="button" value="Continue &gt;&gt;" onclick="buttonPart1();">
+          <input class="next btn btn-primary pull-right" id="next" type="button" value="Fortfahren &gt;&gt;" onclick="buttonPart1();">
         </div>
 
         <div id="div_part2" style="display:none">
@@ -121,7 +121,7 @@ $_SESSION['token_time'] = time();
           <p><strong>In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe fordernder?</strong></p>
 
           <br>
-          <input class="next btn btn-primary pull-right" id="next" type="button" value="Continue &gt;&gt;" onclick="buttonPart2();">
+          <input class="next btn btn-primary pull-right" id="next" type="button" value="Fortfahren &gt;&gt;" onclick="buttonPart2();">
         </div>
 
         <div id="div_part3" style="display:none">
@@ -137,7 +137,7 @@ $_SESSION['token_time'] = time();
                 <td class="def"><div id="pair1_def"></div></td>
               </tr>
               <tr>
-                <td align="center"> or </td>
+                <td align="center"> oder </td>
                 <td></td>
               </tr>
               <tr>

@@ -105,10 +105,18 @@ function getScaleHTML(index)
 
   // Now for the definition of the scale
   result += '<td class="def">';
-  result += def[index];
+  result += generateDefinition(index);
   result += '</td></tr></table>';
 
   return result;
+}
+
+function generateDefinition(index) {
+  var d = '<a tabindex="0" class="btn" role="button" data-toggle="popover" data-placement="top" data-trigger="focus" ';
+  d += 'title="' + scale[index] + '" ';
+  d += 'data-content="' + def[index] + '">';
+  d += '<i class="icon-question-sign icon-2x"></i></a>';
+  return d;
 }
 
 function onLoad()
@@ -118,6 +126,7 @@ function onLoad()
   {
     document.getElementById("scale" + i).innerHTML = getScaleHTML(i);
   }
+  $("[data-toggle=popover]").popover();
 }
 
 // Users want to proceed after doing the scales
@@ -170,8 +179,9 @@ function setPairLabels()
   document.getElementById('pair1').value = pair1;
   document.getElementById('pair2').value = pair2;
 
-  document.getElementById('pair1_def').innerHTML = def[indexes[0]];
-  document.getElementById('pair2_def').innerHTML = def[indexes[1]];
+  document.getElementById('pair1_def').innerHTML = generateDefinition(indexes[0])
+  document.getElementById('pair2_def').innerHTML = generateDefinition(indexes[1]);
+  $("[data-toggle=popover]").popover();
 }
 
 // They clicked the top pair button

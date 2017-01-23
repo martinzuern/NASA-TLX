@@ -9,17 +9,17 @@ $_SESSION['token_time'] = time();
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>NASA Task Load Index</title>
 
-    <!-- 
-    
+    <!--
+
      This implements the NASA TLX via a single web page using JavaScript.
      It first collects the user's rating for 6 scale, the user can
      click on one of 20 different positions equating to a rating of 5-100
-     in increments of 5. The user then selects the more important scale 
+     in increments of 5. The user then selects the more important scale
      in 15 pairings presented in random order.
-    
+
      Copyright 2011 by Keith Vertanen
      http://www.keithv.com/software/nasa_tlx
-    
+
     -->
 
     <script language="JavaScript" type="text/javascript">
@@ -38,33 +38,33 @@ $_SESSION['token_time'] = time();
       scale[0] = "Mental Demand";
       left[0] = "Low";
       right[0] = "High";
-      def[0] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='How much mental and perceptual activity was required (e.g. thinking, deciding, calculating, remembering, looking, searching, etc)? Was the task easy or demanding, simple or complex, exacting or forgiving?'></i>";
+      def[0] = "How much mental and perceptual activity was required (e.g. thinking, deciding, calculating, remembering, looking, searching, etc)? Was the task easy or demanding, simple or complex, exacting or forgiving?";
 
       scale[1] = "Physical Demand";
       left[1] = "Low";
       right[1] = "High";
-      def[1] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='How much physical activity was required (e.g. pushing, pulling, turning, controlling, activating, etc)? Was the task easy or demanding, slow or brisk, slack or strenuous, restful or laborious?'></i>";
+      def[1] = "How much physical activity was required (e.g. pushing, pulling, turning, controlling, activating, etc)? Was the task easy or demanding, slow or brisk, slack or strenuous, restful or laborious?";
 
       scale[2] = "Temporal Demand";
       left[2] = "Low";
       right[2] = "High";
-      def[2] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='How much time pressure did you feel due to the rate of pace at which the tasks or task elements occurred? Was the pace slow and leisurely or rapid and frantic?'></i>";
+      def[2] = "How much time pressure did you feel due to the rate of pace at which the tasks or task elements occurred? Was the pace slow and leisurely or rapid and frantic?";
 
       scale[3] = "Performance";
       left[3] = "Good";
       right[3] = "Poor";
-      def[3] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='How successful do you think you were in accomplishing the goals of the task set by the experimenter (or yourself)? How satisfied were you with your performance in accomplishing these goals?'></i>";
+      def[3] = "How successful do you think you were in accomplishing the goals of the task set by the experimenter (or yourself)? How satisfied were you with your performance in accomplishing these goals?";
 
       scale[4] = "Effort";
       left[4] = "Low";
       right[4] = "High";
-      def[4] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='How hard did you have to work (mentally and physically) to accomplish your level of performance?'></i>";
+      def[4] = "How hard did you have to work (mentally and physically) to accomplish your level of performance?";
 
       scale[5] = "Frustration";
       left[5] = "Low";
       right[5] = "High";
-      def[5] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='How insecure, discouraged, irritated, stressed and annoyed versus secure, gratified, content, relaxed and complacent did you feel during the task?'></i>";
-      
+      def[5] = "How insecure, discouraged, irritated, stressed and annoyed versus secure, gratified, content, relaxed and complacent did you feel during the task?";
+
       var scale_error = 'A value must be selected for every scale!';
       // -->
     </script>
@@ -77,7 +77,7 @@ $_SESSION['token_time'] = time();
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/nasatlx.js"></script>
-    
+
     <script>
       $(document).ready(function(){
         $("[rel=tooltip]").tooltip({ placement: 'right', delay: 0});
@@ -100,7 +100,7 @@ $_SESSION['token_time'] = time();
         <div id="div_part1">
 
           <p class="lead">Click on each scale at the point that best indicates your experience of the task.</p>
-          
+
           <p>In other words: think back on what was easy and what was difficult or annoying about the task. How low or high were the mental demands, physical demands, etc... Drag your cursor over the question marks for more information.</p>
 
           <p><strong>There are no right or wrong answers. If something is not entirely clear, follow your intuition.</strong></p>
@@ -121,7 +121,7 @@ $_SESSION['token_time'] = time();
           <p class="lead">One each of the following 15 screens, click on the scale title that represents the more important contributor to workload for the task.</p>
 
           <p><strong>In other words: which factor made the task more tedious than the other?</strong></p>
-          
+
           <br>
           <input class="next btn btn-primary pull-right" id="next" type="button" value="Continue &gt;&gt;" onclick="buttonPart2();">
         </div>
@@ -131,7 +131,7 @@ $_SESSION['token_time'] = time();
           <p class="lead">Click on the factor that represents the more important contributor to workload for the task.</p>
 
           <p><strong>In other words: which factor made the task more tedious than the other?</strong></p>
-          
+
           <br>
           <table>
             <tbody><tr>
