@@ -3,6 +3,26 @@ NASA-TLX
 
 Web implementation of the NASA-TLX survey, based on [Keith Vertanen's one-page HTML/JS version](http://www.keithv.com/software/nasatlx/).
 
-I should say it's a quick-and-dirty implementation. I just added Bootstrap and jQuery and wrote a PHP script to process the results in csv files. Participant id's and the path of the results folder can be configured in config.php. Id's should be supplied in URL, eg: index.php?id=participant. Make sure the results folder is writable.
+I should say it's a quick-and-dirty implementation. I just added Bootstrap and jQuery and wrote a PHP script to process the results in csv files. 
 
-Dutch version in index-nl.php.
+
+Set the results folder:
+```
+$results_folder_path = 'results'; // best kept outside www root
+```
+
+Particpiants can be preconfigured, and then selected by GET parameter (e.g. `index.php?id=laurens`):
+```
+$dynamic_participants = false;
+$participants = array(
+  'laurens', '...'
+);
+```
+
+Particpiants can be set on the fly, and then selected by two form fields in the questionnaire:
+```
+$dynamic_participants = true;
+```
+
+Dutch version in `index-nl.php`.
+German version in `index-de.php`.
