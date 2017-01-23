@@ -3,7 +3,7 @@ session_start();
 
 require_once('config.php');
 
-if (empty($_GET['id']) || !in_array($_GET['id'], $participants))
+if (!$dynamic_participants && (empty($_GET['id']) || !in_array($_GET['id'], $participants)))
   die(json_encode(array(
     'status' => 'error',
     'msg' => 'Invalid participant!'
@@ -24,10 +24,10 @@ if (empty($_POST['data']))
 try
 {
   $json = json_decode($_POST['data']);
-  
+
   $ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : 'no ip';
   $useragent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : 'no user agent';
-  
+
   $csv = array();
   $csv[] = array(date('c'), $_GET['id'], $ip, $useragent);
   for ($i=0;$i<=5;$i++)

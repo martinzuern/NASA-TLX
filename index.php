@@ -78,12 +78,6 @@ $_SESSION['token_time'] = time();
     <script src="js/bootstrap.min.js"></script>
     <script src="js/nasatlx.js"></script>
 
-    <script>
-      $(document).ready(function(){
-        $("[rel=tooltip]").tooltip({ placement: 'right', delay: 0});
-      });
-    </script>
-
   </head>
 
 
@@ -96,6 +90,23 @@ $_SESSION['token_time'] = time();
         <div class="page-header">
           <h1>NASA-TLX</h1>
         </div>
+
+<?php if($dynamic_participants) { ?>
+        <div class="row" id="participant_id_form">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="part_id_1">ID #1</label>
+              <input type="text" class="form-control" id="part_id_1" placeholder="01">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="part_id_2">ID #2</label>
+              <input type="text" class="form-control" id="part_id_2" placeholder="01">
+            </div>
+          </div>
+        </div>
+<?php } ?>
 
         <div id="div_part1">
 

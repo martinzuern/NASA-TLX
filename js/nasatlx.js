@@ -145,6 +145,16 @@ function buttonPart1()
     }
   }
 
+  // Check if ID fields are filled
+  if($( "#participant_id_form" ).length) {
+    if(!$("#part_id_1").val()) {
+      alert("Missing IDs");
+      return false;
+    } else {
+      $( "#participant_id_form input" ).attr('disabled','disabled');
+    }
+  }
+
   // Bye bye part 1, hello part 2
   document.getElementById('div_part1').style.display = 'none';
   document.getElementById('div_part2').style.display = '';
@@ -279,6 +289,12 @@ function nextPair()
       results_weight: results_weight,
       results_overall: results_overall
     };
+
+    if($( "#participant_id_form" ).length) {
+      participant_id = $("#part_id_1").val();
+      if($("#part_id_2").val())
+      participant_id += "-" + $("#part_id_2").val();
+    }
 
     $.ajax({
       type: 'POST',
