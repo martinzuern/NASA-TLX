@@ -9,17 +9,17 @@ $_SESSION['token_time'] = time();
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>NASA Task Load Index</title>
 
-    <!-- 
-    
+    <!--
+
      This implements the NASA TLX via a single web page using JavaScript.
      It first collects the user's rating for 6 scale, the user can
      click on one of 20 different positions equating to a rating of 5-100
-     in increments of 5. The user then selects the more important scale 
+     in increments of 5. The user then selects the more important scale
      in 15 pairings presented in random order.
-    
+
      Copyright 2011 by Keith Vertanen
      http://www.keithv.com/software/nasa_tlx
-    
+
     -->
 
     <script language="JavaScript" type="text/javascript">
@@ -38,33 +38,33 @@ $_SESSION['token_time'] = time();
       scale[0] = "Mentale Eisen";
       left[0] = "Laag";
       right[0] = "Hoog";
-      def[0] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Hoeveel mentale en perceptuele activiteit was er vereist (bv. denken, beslissen, berekenen, herinneren, kijken, zoeken, enzovoort)? Was de taak gemakkelijk of veeleisend, simpel of complex, strikt of vergevend?'></i>";
+      def[0] = "Hoeveel mentale en perceptuele activiteit was er vereist (bv. denken, beslissen, berekenen, herinneren, kijken, zoeken, enzovoort)? Was de taak gemakkelijk of veeleisend, simpel of complex, strikt of vergevend?";
 
       scale[1] = "Fysieke Eisen";
       left[1] = "Laag";
       right[1] = "Hoog";
-      def[1] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Hoeveel fysieke activiteit was er vereist (bv. duwen, trekken, draaien, controlleren, activeren, enzovoort)? Was de taak gemakkelijk of veeleisend, traag of vlug, licht of zwaar, rustgevend of arbeidsintensief?'></i>";
+      def[1] = "Hoeveel fysieke activiteit was er vereist (bv. duwen, trekken, draaien, controlleren, activeren, enzovoort)? Was de taak gemakkelijk of veeleisend, traag of vlug, licht of zwaar, rustgevend of arbeidsintensief?";
 
       scale[2] = "Tijdseisen";
       left[2] = "Laag";
       right[2] = "Hoog";
-      def[2] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Hoeveel tijdsdruk voelde je door de snelheid waarmee de taak of taken moesten gebeuren? Was het ritme traag en op het gemak, of snel en gehaast?'></i>";
+      def[2] = "Hoeveel tijdsdruk voelde je door de snelheid waarmee de taak of taken moesten gebeuren? Was het ritme traag en op het gemak, of snel en gehaast?";
 
       scale[3] = "Prestatie";
       left[3] = "Goed";
       right[3] = "Slecht";
-      def[3] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Hoe succesvol denk je dat je was in het bereiken van de doelen vooropgesteld door de proefleider (of door jezelf)? Hoe tevreden was je met je performantie in het bereiken van deze doelen?'></i>";
+      def[3] = "Hoe succesvol denk je dat je was in het bereiken van de doelen vooropgesteld door de proefleider (of door jezelf)? Hoe tevreden was je met je performantie in het bereiken van deze doelen?";
 
       scale[4] = "Inspanning";
       left[4] = "Laag";
       right[4] = "Hoog";
-      def[4] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Hoe hard moest je werken (mentaal en fysiek) om jouw niveau van performantie te bereiken?'></i>";
+      def[4] = "Hoe hard moest je werken (mentaal en fysiek) om jouw niveau van performantie te bereiken?";
 
       scale[5] = "Frustratie";
       left[5] = "Laag";
       right[5] = "Hoog";
-      def[5] = "<i class='icon-question-sign icon-2x' rel='tooltip' title='Hoe onzeker, ontmoedigd, geirriteerd, gestrest en geergerd versus zeker, bevredigd, tevreden, ontspannen en zelfvoldaan voelde je tijdens de taak?'></i>";
-      
+      def[5] = "Hoe onzeker, ontmoedigd, geirriteerd, gestrest en geergerd versus zeker, bevredigd, tevreden, ontspannen en zelfvoldaan voelde je tijdens de taak?";
+
       var scale_error = 'Een waarde moet geselecteerd worden voor elke schaal!';
       // -->
     </script>
@@ -77,12 +77,6 @@ $_SESSION['token_time'] = time();
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/nasatlx.js"></script>
-    
-    <script>
-      $(document).ready(function(){
-        $("[rel=tooltip]").tooltip({ placement: 'right', delay: 0});
-      });
-    </script>
 
   </head>
 
@@ -97,10 +91,27 @@ $_SESSION['token_time'] = time();
           <h1>NASA-TLX</h1>
         </div>
 
+<?php if($dynamic_participants) { ?>
+        <div class="row" id="participant_id_form">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="part_id_1">ID #1</label>
+              <input type="text" class="form-control" id="part_id_1" placeholder="01">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="part_id_2">ID #2</label>
+              <input type="text" class="form-control" id="part_id_2" placeholder="01">
+            </div>
+          </div>
+        </div>
+<?php } ?>
+
         <div id="div_part1">
 
           <p class="lead">Klik voor elke schaal op het punt dat jouw ervaring met de taak het beste aangeeft.</p>
-          
+
           <p>Met andere woorden: denk terug aan wat er gemakkelijk was en wat er lastig was aan de taak. Hoe laag of hoog waren de mentale eisen, fysieke eisen, enzovoort... Sleep je cursor over de vraagtekens voor meer uitleg.</p>
 
           <p><strong>Er zijn geen juiste of foute antwoorden. Als er iets niet helemaal duidelijk is, volg dan je intuitie.</strong></p>
@@ -121,7 +132,7 @@ $_SESSION['token_time'] = time();
           <p class="lead">Voor elk van de volgende 15 schermen, klik op de factor die meer bijdraagt aan de werklast van de taak.</p>
 
           <p><strong>Met andere woorden: welke factor maakte het bijhouden van je dromen meer lastiger dan de andere?</strong></p>
-          
+
           <br>
           <input class="next btn btn-primary pull-right" id="next" type="button" value="Continue &gt;&gt;" onclick="buttonPart2();">
         </div>
@@ -131,7 +142,7 @@ $_SESSION['token_time'] = time();
           <p class="lead">Klik op de factor die meer bijdraagt aan de werklast van de taak.</p>
 
           <p><strong>Met andere woorden: welke factor maakte het bijhouden van je dromen meer lastiger dan de andere?</strong></p>
-          
+
           <br>
           <table>
             <tbody><tr>

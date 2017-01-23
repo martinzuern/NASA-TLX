@@ -3,6 +3,8 @@ session_start();
 $token = md5(uniqid(rand(), TRUE));
 $_SESSION['token'] = $token;
 $_SESSION['token_time'] = time();
+
+require_once('config.php');
 ?>
 <html>
   <head>
@@ -23,7 +25,6 @@ $_SESSION['token_time'] = time();
     -->
 
     <script language="JavaScript" type="text/javascript">
-    <!--
       // Participant vars
       var participant_id = "<?php echo $_GET['id']; ?>";
       var token = "<?php echo $token; ?>";
@@ -35,38 +36,37 @@ $_SESSION['token_time'] = time();
       var def = new Array();
       var NUM_SCALES = 6;
 
-      scale[0] = "Mental Demand";
-      left[0] = "Low";
-      right[0] = "High";
-      def[0] = "How much mental and perceptual activity was required (e.g. thinking, deciding, calculating, remembering, looking, searching, etc)? Was the task easy or demanding, simple or complex, exacting or forgiving?";
+      scale[0]  = "Geistige Anforderung";
+      left[0]   = "Gering";
+      right[0]  = "Hoch";
+      def[0]    = "Wie viel geistige Anforderung war bei der Informationsaufnahme und bei der Informationsverarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen, Erinnern, Hinsehen, Suchen ...)? War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex, erfordert sie hohe Genauigkeit oder ist sie fehlertolerant?";
 
-      scale[1] = "Physical Demand";
-      left[1] = "Low";
-      right[1] = "High";
-      def[1] = "How much physical activity was required (e.g. pushing, pulling, turning, controlling, activating, etc)? Was the task easy or demanding, slow or brisk, slack or strenuous, restful or laborious?";
+      scale[1]  = "Körperliche Anforderung";
+      left[1]   = "Gering";
+      right[1]  = "Hoch";
+      def[1]    = "Wie viel körperliche Aktivität war erforderlich (z.B. ziehen, drücken, drehen, steuern, aktivieren ...)? War die Aufgabe leicht oder schwer, einfach oder anstrengend, erholsam oder mühselig?";
 
-      scale[2] = "Temporal Demand";
-      left[2] = "Low";
-      right[2] = "High";
-      def[2] = "How much time pressure did you feel due to the rate of pace at which the tasks or task elements occurred? Was the pace slow and leisurely or rapid and frantic?";
+      scale[2]  = "Zeitliche Anforderung";
+      left[2]   = "Gering";
+      right[2]  = "Hoch";
+      def[2]    = "Wie viel Zeitdruck empfanden Sie hinsichtlich der Häufigkeit oder dem Takt mit dem die Aufgaben oder Aufgabenelemente auftraten? War die Aufgabe langsam und geruhsam oder schnell und hektisch?";
 
-      scale[3] = "Performance";
-      left[3] = "Good";
-      right[3] = "Poor";
-      def[3] = "How successful do you think you were in accomplishing the goals of the task set by the experimenter (or yourself)? How satisfied were you with your performance in accomplishing these goals?";
+      scale[3]  = "Leistung";
+      left[3]   = "Gut";
+      right[3]  = "Schlecht";
+      def[3]    = "Wie erfolgreich haben Sie Ihrer Meinung nach die vom Versuchsleiter (oder Ihnen selbst) gesetzten Ziele erreicht? Wie zufrieden waren Sie mit Ihrer Leistung bei der Verfolgung dieser Ziele?";
 
-      scale[4] = "Effort";
-      left[4] = "Low";
-      right[4] = "High";
-      def[4] = "How hard did you have to work (mentally and physically) to accomplish your level of performance?";
+      scale[4]  = "Anstrengung";
+      left[4]   = "Gering";
+      right[4]  = "Hoch";
+      def[4]    = "Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerfüllung zu erreichen?";
 
-      scale[5] = "Frustration";
-      left[5] = "Low";
-      right[5] = "High";
-      def[5] = "How insecure, discouraged, irritated, stressed and annoyed versus secure, gratified, content, relaxed and complacent did you feel during the task?";
+      scale[5]  = "Frustration";
+      left[5]   = "Gering";
+      right[5]  = "Hoch";
+      def[5]    = "Wie unsicher, entmutigt, irritiert, gestresst und verörgert (versus sicher, bestätigt, zufrieden, entspannt und zufrieden mit sich selbst) fühlten Sie sich während der Aufgabe?";
 
-      var scale_error = 'A value must be selected for every scale!';
-      // -->
+      var scale_error = 'Für jede Skala muss ein Wert gewählt werden!';
     </script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -77,7 +77,6 @@ $_SESSION['token_time'] = time();
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/nasatlx.js"></script>
-
   </head>
 
 
@@ -110,11 +109,11 @@ $_SESSION['token_time'] = time();
 
         <div id="div_part1">
 
-          <p class="lead">Click on each scale at the point that best indicates your experience of the task.</p>
+          <p class="lead">Klicken Sie in jeder Skale auf den Punkt, der Ihre Erfahrung im Hinblick auf die Aufgabe am besten verdeutlicht.</p>
 
-          <p>In other words: think back on what was easy and what was difficult or annoying about the task. How low or high were the mental demands, physical demands, etc... Drag your cursor over the question marks for more information.</p>
+          <p>In anderen Worten: Erinnern Sie sich an die Aufgabe, und was daran einfach, schwer oder anstrengend war. Klicke auf das Fragezeichen, um zu jeder Frage weitere Informationen zu erhalten.</p>
 
-          <p><strong>There are no right or wrong answers. If something is not entirely clear, follow your intuition.</strong></p>
+          <p><strong>Es gibt keine richtigen oder falschen Antworten. Falls etwas nicht eindeutig für Sie erscheint, folgen Sie ihrer Intuition.</strong></p>
 
           <div id="scale0"></div>
           <div id="scale1"></div>
@@ -124,24 +123,24 @@ $_SESSION['token_time'] = time();
           <div id="scale5"></div>
 
           <br>
-          <input class="next btn btn-primary pull-right" id="next" type="button" value="Continue &gt;&gt;" onclick="buttonPart1();">
+          <input class="next btn btn-primary pull-right" id="next" type="button" value="Fortfahren &gt;&gt;" onclick="buttonPart1();">
         </div>
 
         <div id="div_part2" style="display:none">
 
-          <p class="lead">One each of the following 15 screens, click on the scale title that represents the more important contributor to workload for the task.</p>
+          <p class="lead">Klicken Sie in jedem der 15 nachfolgenden Fenster auf die Beanspruchungsdimension, die für das Gesamtempfinden hinsichtlich der Aufgabe die jeweils bedeutsamere war.</p>
 
-          <p><strong>In other words: which factor made the task more tedious than the other?</strong></p>
+          <p><strong>In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe fordernder?</strong></p>
 
           <br>
-          <input class="next btn btn-primary pull-right" id="next" type="button" value="Continue &gt;&gt;" onclick="buttonPart2();">
+          <input class="next btn btn-primary pull-right" id="next" type="button" value="Fortfahren &gt;&gt;" onclick="buttonPart2();">
         </div>
 
         <div id="div_part3" style="display:none">
 
-          <p class="lead">Click on the factor that represents the more important contributor to workload for the task.</p>
+          <p class="lead">Klicken Sie auf die Dimension, die den jeweils wichtigeren Beitrag zur Arbeitsbelastung hinsichtlich der Aufgabe darstellt.</p>
 
-          <p><strong>In other words: which factor made the task more tedious than the other?</strong></p>
+          <p><strong>In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe fordernder?</strong></p>
 
           <br>
           <table>
@@ -150,7 +149,7 @@ $_SESSION['token_time'] = time();
                 <td class="def"><div id="pair1_def"></div></td>
               </tr>
               <tr>
-                <td align="center"> or </td>
+                <td align="center"> oder </td>
                 <td></td>
               </tr>
               <tr>
@@ -163,10 +162,10 @@ $_SESSION['token_time'] = time();
         <div id="div_part4" style="display:none">
           <p class="lead">Results</p>
           <div id="success" class="alert alert-success" style="display:none">
-            <strong>All done!</strong> Results submitted. Thank you for participating.
+            <strong>Alles erledigt!</strong> Ergebnisse übermittelt.
           </div>
           <div id="error" class="alert alert-danger" style="display:none">
-            <strong>Error!</strong> Something went wrong when submitting the results:<br/>
+            <strong>Fehler!</strong> Beim Übermitteln der Ergbenisse ist was falsch gelaufen:<br/>
             <span id='error_msg'></span>
           </div>
           <div id="results">
