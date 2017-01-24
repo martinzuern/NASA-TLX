@@ -197,8 +197,8 @@ function setPairLabels()
 // They clicked the top pair button
 function buttonPair1()
 {
-  $('input[type=button]').attr('disabled', 'disabled');
-  setTimeout('$("input[type=button]").removeAttr("disabled")', 1200);
+  $('button').attr('disabled', 'disabled');
+  setTimeout('$("button").removeAttr("disabled")', 1200);
 
   var indexes = new Array();
   indexes = pair[pair_num].split(" ");
@@ -211,8 +211,8 @@ function buttonPair1()
 // They clicked the bottom pair button
 function buttonPair2()
 {
-  $('input[type=button]').attr('disabled', 'disabled');
-  setTimeout('$("input[type=button]").removeAttr("disabled")', 1200);
+  $('button').attr('disabled', 'disabled');
+  setTimeout('button").removeAttr("disabled")', 1200);
 
   var indexes = new Array();
   indexes = pair[pair_num].split(" ");
