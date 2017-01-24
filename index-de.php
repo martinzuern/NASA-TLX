@@ -41,15 +41,15 @@ require_once('config.php');
       right[0]  = "Hoch";
       def[0]    = "Wie viel geistige Anforderung war bei der Informationsaufnahme und bei der Informationsverarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen, Erinnern, Hinsehen, Suchen ...)? War die Aufgabe leicht oder anspruchsvoll, einfach oder komplex, erfordert sie hohe Genauigkeit oder ist sie fehlertolerant?";
 
-      scale[1]  = "Körperliche Anforderung";
+      scale[1]  = "K&ouml;rperliche Anforderung";
       left[1]   = "Gering";
       right[1]  = "Hoch";
-      def[1]    = "Wie viel körperliche Aktivität war erforderlich (z.B. ziehen, drücken, drehen, steuern, aktivieren ...)? War die Aufgabe leicht oder schwer, einfach oder anstrengend, erholsam oder mühselig?";
+      def[1]    = "Wie viel k&ouml;rperliche Aktivit&auml;t war erforderlich (z.B. ziehen, dr&uuml;cken, drehen, steuern, aktivieren ...)? War die Aufgabe leicht oder schwer, einfach oder anstrengend, erholsam oder m&uuml;hselig?";
 
       scale[2]  = "Zeitliche Anforderung";
       left[2]   = "Gering";
       right[2]  = "Hoch";
-      def[2]    = "Wie viel Zeitdruck empfanden Sie hinsichtlich der Häufigkeit oder dem Takt mit dem die Aufgaben oder Aufgabenelemente auftraten? War die Aufgabe langsam und geruhsam oder schnell und hektisch?";
+      def[2]    = "Wie viel Zeitdruck empfanden Sie hinsichtlich der H&auml;ufigkeit oder dem Takt mit dem die Aufgaben oder Aufgabenelemente auftraten? War die Aufgabe langsam und geruhsam oder schnell und hektisch?";
 
       scale[3]  = "Leistung";
       left[3]   = "Gut";
@@ -59,14 +59,14 @@ require_once('config.php');
       scale[4]  = "Anstrengung";
       left[4]   = "Gering";
       right[4]  = "Hoch";
-      def[4]    = "Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerfüllung zu erreichen?";
+      def[4]    = "Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerf&uuml;llung zu erreichen?";
 
       scale[5]  = "Frustration";
       left[5]   = "Gering";
       right[5]  = "Hoch";
-      def[5]    = "Wie unsicher, entmutigt, irritiert, gestresst und verörgert (versus sicher, bestätigt, zufrieden, entspannt und zufrieden mit sich selbst) fühlten Sie sich während der Aufgabe?";
+      def[5]    = "Wie unsicher, entmutigt, irritiert, gestresst und ver&ouml;rgert (versus sicher, best&auml;tigt, zufrieden, entspannt und zufrieden mit sich selbst) f&uuml;hlten Sie sich w&auml;hrend der Aufgabe?";
 
-      var scale_error = 'Für jede Skala muss ein Wert gewählt werden!';
+      var scale_error = 'F&uuml;r jede Skala muss ein Wert gew&auml;hlt werden!';
     </script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -113,7 +113,7 @@ require_once('config.php');
 
           <p>In anderen Worten: Erinnern Sie sich an die Aufgabe, und was daran einfach, schwer oder anstrengend war. Klicke auf das Fragezeichen, um zu jeder Frage weitere Informationen zu erhalten.</p>
 
-          <p><strong>Es gibt keine richtigen oder falschen Antworten. Falls etwas nicht eindeutig für Sie erscheint, folgen Sie ihrer Intuition.</strong></p>
+          <p><strong>Es gibt keine richtigen oder falschen Antworten. Falls etwas nicht eindeutig f&uuml;r Sie erscheint, folgen Sie ihrer Intuition.</strong></p>
 
           <div id="scale0"></div>
           <div id="scale1"></div>
@@ -133,7 +133,7 @@ require_once('config.php');
           <p><strong>In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe fordernder?</strong></p>
 
           <br>
-          <input class="next btn btn-primary pull-right" id="next" type="button" value="Fortfahren &gt;&gt;" onclick="buttonPart2();">
+          <input class="next btn btn-primary pull-right" id="next" type="button" value="Fortfahren >>" onclick="buttonPart2();">
         </div>
 
         <div id="div_part3" style="display:none">
@@ -162,10 +162,10 @@ require_once('config.php');
         <div id="div_part4" style="display:none">
           <p class="lead">Results</p>
           <div id="success" class="alert alert-success" style="display:none">
-            <strong>Alles erledigt!</strong> Ergebnisse übermittelt.
+            <strong>Alles erledigt!</strong> Ergebnisse &uuml;bermittelt.
           </div>
           <div id="error" class="alert alert-danger" style="display:none">
-            <strong>Fehler!</strong> Beim Übermitteln der Ergbenisse ist was falsch gelaufen:<br/>
+            <strong>Fehler!</strong> Beim &Uuml;bermitteln der Ergbenisse ist was falsch gelaufen:<br/>
             <span id='error_msg'></span>
           </div>
           <div id="results">
