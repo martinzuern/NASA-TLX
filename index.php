@@ -3,7 +3,8 @@ session_start();
 $token = md5(uniqid(rand(), TRUE));
 $_SESSION['token'] = $token;
 $_SESSION['token_time'] = time();
-?>
+
+require_once('config.php');?>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
