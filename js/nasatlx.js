@@ -186,8 +186,8 @@ function setPairLabels()
   var pair1 = scale[indexes[0]];
   var pair2 = scale[indexes[1]];
 
-  document.getElementById('pair1').value = pair1;
-  document.getElementById('pair2').value = pair2;
+  $('#pair1').html(pair1);
+  $('#pair2').html(pair2);
 
   document.getElementById('pair1_def').innerHTML = generateDefinition(indexes[0])
   document.getElementById('pair2_def').innerHTML = generateDefinition(indexes[1]);

@@ -128,7 +128,7 @@ require_once('config.php');
 
         <div id="div_part2" style="display:none">
 
-          <p class="lead">Klicken Sie in jedem der 15 nachfolgenden Fenster auf die Beanspruchungsdimension, die für das Gesamtempfinden hinsichtlich der Aufgabe die jeweils bedeutsamere war.</p>
+          <p class="lead">Klicken Sie in jedem der 15 nachfolgenden Fenster auf die Beanspruchungsdimension, die f&uuml;r das Gesamtempfinden hinsichtlich der Aufgabe die jeweils bedeutsamere war.</p>
 
           <p><strong>In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe fordernder?</strong></p>
 
@@ -145,7 +145,7 @@ require_once('config.php');
           <br>
           <table>
             <tbody><tr>
-                <td><input class="pair" id="pair1" type="button" value="" onclick="buttonPair1();"> </td>
+                <td><button class="pair btn btn-default btn-lg btn-block" id="pair1" type="button" onclick="buttonPair1();"></button></td>
                 <td class="def"><div id="pair1_def"></div></td>
               </tr>
               <tr>
@@ -153,7 +153,7 @@ require_once('config.php');
                 <td></td>
               </tr>
               <tr>
-                <td><input class="pair" id="pair2" type="button" value="" onclick="buttonPair2();"></td>
+                <td><button class="pair btn btn-default btn-lg btn-block" id="pair2" type="button" onclick="buttonPair2();"></button></td>
                 <td class="def"><div id="pair2_def"></div></td>
               </tr>
             </tbody></table>

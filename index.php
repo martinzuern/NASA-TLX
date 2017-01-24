@@ -147,15 +147,15 @@ require_once('config.php');?>
           <br>
           <table>
             <tbody><tr>
-                <td><input class="pair" id="pair1" type="button" value="" onclick="buttonPair1();"> </td>
+                <td><button class="pair btn btn-default btn-lg btn-block" id="pair1" type="button" onclick="buttonPair1();"></button></td>
                 <td class="def"><div id="pair1_def"></div></td>
               </tr>
               <tr>
-                <td align="center"> or </td>
+                <td align="center"> oder </td>
                 <td></td>
               </tr>
               <tr>
-                <td><input class="pair" id="pair2" type="button" value="" onclick="buttonPair2();"></td>
+                <td><button class="pair btn btn-default btn-lg btn-block" id="pair2" type="button" onclick="buttonPair2();"></button></td>
                 <td class="def"><div id="pair2_def"></div></td>
               </tr>
             </tbody></table>
