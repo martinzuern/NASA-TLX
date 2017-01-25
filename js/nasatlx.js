@@ -197,8 +197,13 @@ function setPairLabels()
 // They clicked the top pair button
 function buttonPair1()
 {
+  if($('#pair1').prop( "disabled" )) {
+    return false;
+  }
   $('button').attr('disabled', 'disabled');
-  setTimeout('$("button").removeAttr("disabled")', 1200);
+  setTimeout(function () {
+    $('button').removeAttr('disabled');
+  }, 1200);
 
   var indexes = new Array();
   indexes = pair[pair_num].split(" ");
@@ -211,9 +216,13 @@ function buttonPair1()
 // They clicked the bottom pair button
 function buttonPair2()
 {
+  if($('#pair2').prop( "disabled" )) {
+    return false;
+  }
   $('button').attr('disabled', 'disabled');
-  setTimeout('button").removeAttr("disabled")', 1200);
-
+  setTimeout(function () {
+    $('button').removeAttr('disabled');
+  }, 1200);
   var indexes = new Array();
   indexes = pair[pair_num].split(" ");
   results_tally[indexes[1]]++;
