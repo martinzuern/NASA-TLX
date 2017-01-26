@@ -165,7 +165,7 @@ require_once('config.php');
             <strong>Alles erledigt!</strong> Ergebnisse &uuml;bermittelt.
           </div>
           <div id="error" class="alert alert-danger" style="display:none">
-            <strong>Fehler!</strong> Beim &Uuml;bermitteln der Ergbenisse ist was falsch gelaufen:<br/>
+            <strong>Fehler!</strong> Beim &Uuml;bermitteln der Ergebnisse ist was falsch gelaufen:<br/>
             <span id='error_msg'></span>
           </div>
           <div id="results">
