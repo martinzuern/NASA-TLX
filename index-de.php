@@ -5,6 +5,11 @@ $_SESSION['token'] = $token;
 $_SESSION['token_time'] = time();
 
 require_once('config.php');
+
+if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) {
+  die("You have to submit an ID.");
+}
+
 ?>
 <html>
   <head>
@@ -161,14 +166,21 @@ require_once('config.php');
 
         <div id="div_part4" style="display:none">
           <p class="lead">Results</p>
-          <div id="success" class="alert alert-success" style="display:none">
-            <strong>Alles erledigt!</strong> Ergebnisse &uuml;bermittelt.
+          <div id="success" style="display:none">
+            <div class="alert alert-success">
+                <strong>Alles erledigt!</strong> Ergebnisse &uuml;bermittelt.
+            </div>
+
+            <?php if($showCloseButton) {?>
+            <a role="button" class="btn btn-primary btn-lg" href="javascript:window.open('','_self').close();">Fragebogen schließen</a>
+            <?php } ?>
+
           </div>
           <div id="error" class="alert alert-danger" style="display:none">
             <strong>Fehler!</strong> Beim &Uuml;bermitteln der Ergebnisse ist was falsch gelaufen:<br/>
             <span id='error_msg'></span>
           </div>
-          <div id="results">
+          <div id="results" <?php if(!$showResults) {?> style="display:none" <?php } ?>>
           </div>
         </div>
 
