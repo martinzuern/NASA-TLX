@@ -86,10 +86,6 @@ if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) 
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/nasatlx.css">
-
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/nasatlx.js"></script>
   </head>
 
 
@@ -214,6 +210,8 @@ if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) 
       </div>
     </div>
 
-
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nasatlx.js"></script>
   </body>
 </html>
