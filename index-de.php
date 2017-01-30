@@ -148,20 +148,32 @@ if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) 
           <p><strong>In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe fordernder?</strong></p>
 
           <br>
-          <table>
-            <tbody><tr>
-                <td><button class="pair btn btn-default btn-lg btn-block" id="pair1" type="button" onclick="buttonPair1();"></button></td>
-                <td class="def"><div id="pair1_def"></div></td>
-              </tr>
-              <tr>
-                <td align="center"> oder </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><button class="pair btn btn-default btn-lg btn-block" id="pair2" type="button" onclick="buttonPair2();"></button></td>
-                <td class="def"><div id="pair2_def"></div></td>
-              </tr>
-            </tbody></table>
+
+
+          <div class="row">
+            <div class="col-md-8">
+              <button class="pair btn btn-default btn-lg btn-block" id="pair1" type="button" onclick="buttonPair1();"></button>
+            </div>
+            <div class="col-md-4">
+              <div id="pair1_def"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8" style="text-align: center;">
+              oder
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8">
+              <button class="pair btn btn-default btn-lg btn-block" id="pair2" type="button" onclick="buttonPair2();"></button>
+            </div>
+            <div class="col-md-4">
+              <div id="pair2_def"></div>
+            </div>
+          </div>
+
         </div>
 
         <div id="div_part4" style="display:none">
@@ -172,7 +184,7 @@ if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) 
             </div>
 
             <?php if($showCloseButton) {?>
-            <a role="button" class="btn btn-primary btn-lg" href="javascript:window.open('','_self').close();">Fragebogen schließen</a>
+            <a role="button" class="btn btn-primary btn-lg" href="javascript:window.open('','_self').close();">Fragebogen schlie&szlig;en</a>
             <?php } ?>
 
           </div>
