@@ -4,7 +4,7 @@ NASA-TLX
 Web implementation of the NASA-TLX survey, based on [Keith Vertanen's one-page HTML/JS version](http://www.keithv.com/software/nasatlx/).
 
 The implementation polished the UI with jQuery and Bootstrap, and writes the results into a CSV file. 
-Multiple languages supported (English, German and Durch for now). PR are welcome to add more. 
+Multiple languages supported (English, German and Dutch for now). PR are welcome to add more. 
 
 Language and Condition can be submitted by URL, e.g. `http://foo.bar/index.php?lang=de&id=A`
 
