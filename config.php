@@ -1,12 +1,23 @@
 <?php
-// MODIFY THIS:
-$results_folder_path = 'results'; // best kept outside www root
 
-$dynamic_participants = false;
-$check_ids = false;
-$showCloseButton = true;
-$showResults = false;
+$config = array(
+  // best kept outside www root
+  'results_folder_path' => './results',
 
-$defaultLang = 'de';
+  // show a form for two ID variables instead of URL Parameter
+  'ask_for_id' => false,
 
-$participants = array();
+  // show a button to close the window at the end
+  'showCloseButton' => true,
+
+  // shall the results be visible for the participant?
+  'showResults' => false,
+
+  // default language. Currently, 'en'/'de'/'nl' are supported
+  'defaultLang' => 'de',
+
+  // array with valid IDs. Keep empty to allow all.
+  'valid_ids' => array()
+);
+
+?>

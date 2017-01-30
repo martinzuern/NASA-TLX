@@ -7,14 +7,14 @@ $_SESSION['token'] = $token;
 $_SESSION['token_time'] = time();
 
 // Specify location of translation tables
-$language = isset($_GET['lang']) ? $_GET['lang'] : $defaultLang;
+$language = isset($_GET['lang']) ? $_GET['lang'] : $config['defaultLang'];
 putenv("LANG=$language");
 setlocale(LC_ALL, $language);
 bindtextdomain('messages', "./locale");
 textdomain('messages');
 bind_textdomain_codeset('messages', 'UTF-8');
 
-if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) {
+if(!$config['ask_for_id'] AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) {
   die(gettext("You have to submit an ID."));
 }
 
@@ -99,7 +99,7 @@ if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) 
           <h1>NASA-TLX</h1>
         </div>
 
-<?php if($dynamic_participants) { ?>
+<?php if($config['ask_for_id']) { ?>
         <div class="row" id="participant_id_form">
           <div class="col-md-6">
             <div class="form-group">
@@ -187,7 +187,7 @@ if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) 
                 <strong><?= gettext("All done!") ?></strong> <?= gettext("Results submitted. Thank you for participating.") ?>
             </div>
 
-            <?php if($showCloseButton) {?>
+            <?php if($config['showCloseButton']) {?>
             <a role="button" class="btn btn-primary btn-lg" href="javascript:window.open('','_self').close();"><?= gettext("Close") ?></a>
             <?php } ?>
 
@@ -196,7 +196,7 @@ if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) 
             <strong><?= gettext("Error!") ?></strong> <?= gettext("Something went wrong when submitting the results:") ?><br/>
             <span id='error_msg'></span>
           </div>
-          <div id="results" <?php if(!$showResults) {?> style="display:none" <?php } ?>>
+          <div id="results" <?php if(!$config['showResults']) {?> style="display:none" <?php } ?>>
           </div>
         </div>
 

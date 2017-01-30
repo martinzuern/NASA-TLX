@@ -9,7 +9,7 @@ if (!isset($_GET['id']) OR strlen($_GET['id']) < 1)
     'msg' => 'No ID submitted!'
   )));
 
-if (count($participants) > 0 && !in_array($_GET['id'], $participants))
+if (count($config['valid_ids']) > 0 && !in_array($_GET['id'], $config['valid_ids']))
   die(json_encode(array(
     'status' => 'error',
     'msg' => 'Invalid participant!'
@@ -40,7 +40,7 @@ try
     $csv[] = array($json->scale[$i], $json->results_rating[$i], $json->results_tally[$i], $json->results_weight[$i]);
   $csv[] = array($json->results_overall);
 
-  $resultsfile = $results_folder_path . '/nasatlx_'.date('Y-m-d_H-i').'_'.$_GET['id'].'.csv';
+  $resultsfile = $config['results_folder_path'] . '/nasatlx_'.date('Y-m-d_H-i').'_'.$_GET['id'].'.csv';
   $fp = fopen($resultsfile, 'w+');
   if (!$fp)
     throw new Exception('Could not create file!');
