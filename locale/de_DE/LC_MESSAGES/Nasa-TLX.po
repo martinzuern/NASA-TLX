@@ -1,0 +1,358 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NASA-TLX\n"
+"POT-Creation-Date: 2017-01-30 13:25+0100\n"
+"PO-Revision-Date: 2017-01-30 13:50+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: index.php\n"
+
+#: index.php:14
+msgid "You have to submit an ID."
+msgstr "Sie müssen eine ID angeben."
+
+#: index.php:48
+msgid "Mental Demand"
+msgstr "Geistige Anforderung"
+
+#: index.php:49 index.php:54 index.php:59 index.php:69 index.php:74
+msgid "Low"
+msgstr "Gering"
+
+#: index.php:50 index.php:55 index.php:60 index.php:70 index.php:75
+msgid "High"
+msgstr "Hoch"
+
+#: index.php:51
+msgid ""
+"How much mental and perceptual activity was required (e.g. thinking, "
+"deciding, calculating, remembering, looking, searching, etc)? Was the task "
+"easy or demanding, simple or complex, exacting or forgiving?"
+msgstr ""
+"Wie viel geistige Anforderung war bei der Informationsaufnahme und bei der "
+"Informationsverarbeitung erforderlich (z.B. Denken, Entscheiden, Rechnen, "
+"Erinnern, Hinsehen, Suchen ...)? War die Aufgabe leicht oder anspruchsvoll, "
+"einfach oder komplex, erfordert sie hohe Genauigkeit oder ist sie "
+"fehlertolerant?"
+
+#: index.php:53
+msgid "Physical Demand"
+msgstr "Körperliche Anforderung"
+
+#: index.php:56
+msgid ""
+"How much physical activity was required (e.g. pushing, pulling, turning, "
+"controlling, activating, etc)? Was the task easy or demanding, slow or "
+"brisk, slack or strenuous, restful or laborious?"
+msgstr ""
+"Wie viel körperliche Aktivität war erforderlich (z.B. ziehen, drücken, "
+"drehen, steuern, aktivieren ...)? War die Aufgabe leicht oder schwer, "
+"einfach oder anstrengend, erholsam oder mühselig?"
+
+#: index.php:58
+msgid "Temporal Demand"
+msgstr "Zeitliche Anforderung"
+
+#: index.php:61
+msgid ""
+"How much time pressure did you feel due to the rate of pace at which the "
+"tasks or task elements occurred? Was the pace slow and leisurely or rapid "
+"and frantic?"
+msgstr ""
+"Wie viel Zeitdruck empfanden Sie hinsichtlich der Häufigkeit oder dem Takt "
+"mit dem die Aufgaben oder Aufgabenelemente auftraten? War die Aufgabe "
+"langsam und geruhsam oder schnell und hektisch?"
+
+#: index.php:63
+msgid "Performance"
+msgstr "Leistung"
+
+#: index.php:64
+msgid "Good"
+msgstr "Gut"
+
+#: index.php:65
+msgid "Poor"
+msgstr "Schlecht"
+
+#: index.php:66
+msgid ""
+"How successful do you think you were in accomplishing the goals of the task "
+"set by the experimenter (or yourself)? How satisfied were you with your "
+"performance in accomplishing these goals?"
+msgstr ""
+"Wie erfolgreich haben Sie Ihrer Meinung nach die vom Versuchsleiter (oder "
+"Ihnen selbst) gesetzten Ziele erreicht? Wie zufrieden waren Sie mit Ihrer "
+"Leistung bei der Verfolgung dieser Ziele?"
+
+#: index.php:68
+msgid "Effort"
+msgstr "Anstrengung"
+
+#: index.php:71
+msgid ""
+"How hard did you have to work (mentally and physically) to accomplish your "
+"level of performance?"
+msgstr ""
+"Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerfüllung zu "
+"erreichen?"
+
+#: index.php:73
+msgid "Frustration"
+msgstr "Frustration"
+
+#: index.php:76
+msgid ""
+"How insecure, discouraged, irritated, stressed and annoyed versus secure, "
+"gratified, content, relaxed and complacent did you feel during the task?"
+msgstr ""
+"Wie unsicher, entmutigt, irritiert, gestresst und verärgert (versus sicher, "
+"bestätigt, zufrieden, entspannt und zufrieden mit sich selbst) fühlten Sie "
+"sich während der Aufgabe?"
+
+#: index.php:78
+msgid "A value must be selected for every scale!"
+msgstr "Für jede Dimension muss ein Wert gewählt werden!"
+
+#: index.php:121
+msgid ""
+"Click on each scale at the point that best indicates your experience of the "
+"task."
+msgstr ""
+"Klicken Sie in jeder Skale auf den Punkt, der Ihre Erfahrung im Hinblick auf "
+"die Aufgabe am besten verdeutlicht."
+
+#: index.php:123
+msgid ""
+"In other words: think back on what was easy and what was difficult or "
+"annoying about the task. How low or high were the mental demands, physical "
+"demands, etc... Drag your cursor over the question marks for more "
+"information."
+msgstr ""
+"In anderen Worten: Erinnern Sie sich an die Aufgabe, und was daran einfach, "
+"schwer oder anstrengend war. Klicke auf das Fragezeichen, um zu jeder Frage "
+"weitere Informationen zu erhalten."
+
+#: index.php:125
+msgid ""
+"There are no right or wrong answers. If something is not entirely clear, "
+"follow your intuition."
+msgstr ""
+"Es gibt keine richtigen oder falschen Antworten. Falls etwas nicht eindeutig "
+"für Sie erscheint, folgen Sie ihrer Intuition."
+
+#: index.php:135 index.php:145
+msgid "Next"
+msgstr "Weiter"
+
+#: index.php:140
+msgid ""
+"One each of the following 15 screens, click on the scale title that "
+"represents the more important contributor to workload for the task."
+msgstr ""
+"Klicken Sie in jedem der 15 nachfolgenden Fenster auf die "
+"Beanspruchungsdimension, die für das Gesamtempfinden hinsichtlich der "
+"Aufgabe die jeweils bedeutsamere war."
+
+#: index.php:142 index.php:152
+msgid "In other words: which factor made the task more tedious than the other?"
+msgstr ""
+"In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe "
+"fordernder?"
+
+#: index.php:150
+msgid ""
+"Click on the factor that represents the more important contributor to "
+"workload for the task."
+msgstr ""
+"Klicken Sie auf die Dimension, die den jeweils wichtigeren Beitrag zur "
+"Arbeitsbelastung hinsichtlich der Aufgabe darstellt."
+
+#: index.php:168
+msgid "or"
+msgstr "oder"
+
+#: index.php:184
+msgid "Results"
+msgstr "Ergebnisse"
+
+#: index.php:187
+msgid "All done!"
+msgstr "Alles erledigt!"
+
+#: index.php:187
+msgid "Results submitted. Thank you for participating."
+msgstr "Ergebnisse erfolgreich übermittelt. Danke für Ihre Teilnahme."
+
+#: index.php:191
+msgid "Close"
+msgstr "Fragebogen schließen"
+
+#: index.php:196
+msgid "Error!"
+msgstr "Fehler!"
+
+#: index.php:196
+msgid "Something went wrong when submitting the results:"
+msgstr "Bei der Übermittlung der Ergebnisse ist etwas fehlgeschlagen:"
+
+#~ msgid "Fragebogen schlie&szlig;en"
+#~ msgstr "Fragebogen schlie&szlig;en"
+
+#~ msgid ""
+#~ "Klicken Sie in jedem der 15 nachfolgenden Fenster auf die "
+#~ "Beanspruchungsdimension, die f&uuml;r das Gesamtempfinden hinsichtlich "
+#~ "der Aufgabe die jeweils bedeutsamere war."
+#~ msgstr ""
+#~ "Klicken Sie in jedem der 15 nachfolgenden Fenster auf die "
+#~ "Beanspruchungsdimension, die f&uuml;r das Gesamtempfinden hinsichtlich "
+#~ "der Aufgabe die jeweils bedeutsamere war."
+
+#~ msgid ""
+#~ "In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe "
+#~ "fordernder?"
+#~ msgstr ""
+#~ "In anderen Worten: Welche der beiden Dimensionen machte die Aufgabe "
+#~ "fordernder?"
+
+#~ msgid ""
+#~ "Klicken Sie in jeder Skale auf den Punkt, der Ihre Erfahrung im Hinblick "
+#~ "auf die Aufgabe am besten verdeutlicht."
+#~ msgstr ""
+#~ "Klicken Sie in jeder Skale auf den Punkt, der Ihre Erfahrung im Hinblick "
+#~ "auf die Aufgabe am besten verdeutlicht."
+
+#~ msgid ""
+#~ "In anderen Worten: Erinnern Sie sich an die Aufgabe, und was daran "
+#~ "einfach, schwer oder anstrengend war. Klicke auf das Fragezeichen, um zu "
+#~ "jeder Frage weitere Informationen zu erhalten."
+#~ msgstr ""
+#~ "In anderen Worten: Erinnern Sie sich an die Aufgabe, und was daran "
+#~ "einfach, schwer oder anstrengend war. Klicke auf das Fragezeichen, um zu "
+#~ "jeder Frage weitere Informationen zu erhalten."
+
+#~ msgid ""
+#~ "Es gibt keine richtigen oder falschen Antworten. Falls etwas nicht "
+#~ "eindeutig f&uuml;r Sie erscheint, folgen Sie ihrer Intuition."
+#~ msgstr ""
+#~ "Es gibt keine richtigen oder falschen Antworten. Falls etwas nicht "
+#~ "eindeutig f&uuml;r Sie erscheint, folgen Sie ihrer Intuition."
+
+#~ msgid "Fortfahren"
+#~ msgstr "Fortfahren"
+
+#~ msgid ""
+#~ "Klicken Sie auf die Dimension, die den jeweils wichtigeren Beitrag zur "
+#~ "Arbeitsbelastung hinsichtlich der Aufgabe darstellt."
+#~ msgstr ""
+#~ "Klicken Sie auf die Dimension, die den jeweils wichtigeren Beitrag zur "
+#~ "Arbeitsbelastung hinsichtlich der Aufgabe darstellt."
+
+#~ msgid "oder"
+#~ msgstr "oder"
+
+#~ msgid "Alles erledigt!"
+#~ msgstr "Alles erledigt!"
+
+#~ msgid "Ergebnisse &uuml;bermittelt."
+#~ msgstr "Ergebnisse &uuml;bermittelt."
+
+#~ msgid "Fehler!"
+#~ msgstr "Fehler!"
+
+#~ msgid "Beim &Uuml;bermitteln der Ergebnisse ist was falsch gelaufen:"
+#~ msgstr "Beim &Uuml;bermitteln der Ergebnisse ist was falsch gelaufen:"
+
+#~ msgid "Geistige Anforderung"
+#~ msgstr "Geistige Anforderung"
+
+#~ msgid "Gering"
+#~ msgstr "Gering"
+
+#~ msgid "Hoch"
+#~ msgstr "Hoch"
+
+#~ msgid ""
+#~ "Wie viel geistige Anforderung war bei der Informationsaufnahme und bei "
+#~ "der Informationsverarbeitung erforderlich (z.B. Denken, Entscheiden, "
+#~ "Rechnen, Erinnern, Hinsehen, Suchen ...)? War die Aufgabe leicht oder "
+#~ "anspruchsvoll, einfach oder komplex, erfordert sie hohe Genauigkeit oder "
+#~ "ist sie fehlertolerant?"
+#~ msgstr ""
+#~ "Wie viel geistige Anforderung war bei der Informationsaufnahme und bei "
+#~ "der Informationsverarbeitung erforderlich (z.B. Denken, Entscheiden, "
+#~ "Rechnen, Erinnern, Hinsehen, Suchen ...)? War die Aufgabe leicht oder "
+#~ "anspruchsvoll, einfach oder komplex, erfordert sie hohe Genauigkeit oder "
+#~ "ist sie fehlertolerant?"
+
+#, fuzzy
+#~ msgid "K&ouml;rperliche Anforderung"
+#~ msgstr "K&ouml;rperliche Anforderung"
+
+#~ msgid ""
+#~ "Wie viel k&ouml;rperliche Aktivit&auml;t war erforderlich (z.B. ziehen, "
+#~ "dr&uuml;cken, drehen, steuern, aktivieren ...)? War die Aufgabe leicht "
+#~ "oder schwer, einfach oder anstrengend, erholsam oder m&uuml;hselig?"
+#~ msgstr ""
+#~ "Wie viel k&ouml;rperliche Aktivit&auml;t war erforderlich (z.B. ziehen, "
+#~ "dr&uuml;cken, drehen, steuern, aktivieren ...)? War die Aufgabe leicht "
+#~ "oder schwer, einfach oder anstrengend, erholsam oder m&uuml;hselig?"
+
+#~ msgid "Zeitliche Anforderung"
+#~ msgstr "Zeitliche Anforderung"
+
+#~ msgid ""
+#~ "Wie viel Zeitdruck empfanden Sie hinsichtlich der H&auml;ufigkeit oder "
+#~ "dem Takt mit dem die Aufgaben oder Aufgabenelemente auftraten? War die "
+#~ "Aufgabe langsam und geruhsam oder schnell und hektisch?"
+#~ msgstr ""
+#~ "Wie viel Zeitdruck empfanden Sie hinsichtlich der H&auml;ufigkeit oder "
+#~ "dem Takt mit dem die Aufgaben oder Aufgabenelemente auftraten? War die "
+#~ "Aufgabe langsam und geruhsam oder schnell und hektisch?"
+
+#~ msgid "Leistung"
+#~ msgstr "Leistung"
+
+#~ msgid "Gut"
+#~ msgstr "Gut"
+
+#~ msgid "Schlecht"
+#~ msgstr "Schlecht"
+
+#~ msgid ""
+#~ "Wie erfolgreich haben Sie Ihrer Meinung nach die vom Versuchsleiter (oder "
+#~ "Ihnen selbst) gesetzten Ziele erreicht? Wie zufrieden waren Sie mit Ihrer "
+#~ "Leistung bei der Verfolgung dieser Ziele?"
+#~ msgstr ""
+#~ "Wie erfolgreich haben Sie Ihrer Meinung nach die vom Versuchsleiter (oder "
+#~ "Ihnen selbst) gesetzten Ziele erreicht? Wie zufrieden waren Sie mit Ihrer "
+#~ "Leistung bei der Verfolgung dieser Ziele?"
+
+#~ msgid "Anstrengung"
+#~ msgstr "Anstrengung"
+
+#~ msgid ""
+#~ "Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerf&uuml;llung zu "
+#~ "erreichen?"
+#~ msgstr ""
+#~ "Wie hart mussten Sie arbeiten, um Ihren Grad an Aufgabenerf&uuml;llung zu "
+#~ "erreichen?"
+
+#~ msgid ""
+#~ "Wie unsicher, entmutigt, irritiert, gestresst und ver&ouml;rgert (versus "
+#~ "sicher, best&auml;tigt, zufrieden, entspannt und zufrieden mit sich "
+#~ "selbst) f&uuml;hlten Sie sich w&auml;hrend der Aufgabe?"
+#~ msgstr ""
+#~ "Wie unsicher, entmutigt, irritiert, gestresst und ver&ouml;rgert (versus "
+#~ "sicher, best&auml;tigt, zufrieden, entspannt und zufrieden mit sich "
+#~ "selbst) f&uuml;hlten Sie sich w&auml;hrend der Aufgabe?"
+
+#~ msgid "F&uuml;r jede Skala muss ein Wert gew&auml;hlt werden!"
+#~ msgstr "F&uuml;r jede Skala muss ein Wert gew&auml;hlt werden!"

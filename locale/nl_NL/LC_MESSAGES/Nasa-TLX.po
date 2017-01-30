@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-01-30 13:38+0100\n"
+"PO-Revision-Date: 2017-01-30 13:42+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: index.php\n"
+
+#: index.php:14
+msgid "You have to submit an ID."
+msgstr "Je moet een ID in te dienen."
+
+#: index.php:48
+msgid "Mental Demand"
+msgstr "Mentale Eisen"
+
+#: index.php:49 index.php:54 index.php:59 index.php:69 index.php:74
+msgid "Low"
+msgstr "Laag"
+
+#: index.php:50 index.php:55 index.php:60 index.php:70 index.php:75
+msgid "High"
+msgstr "Hoog"
+
+#: index.php:51
+msgid ""
+"How much mental and perceptual activity was required (e.g. thinking, "
+"deciding, calculating, remembering, looking, searching, etc)? Was the task "
+"easy or demanding, simple or complex, exacting or forgiving?"
+msgstr ""
+"Hoeveel mentale en perceptuele activiteit was er vereist (bv. denken, "
+"beslissen, berekenen, herinneren, kijken, zoeken, enzovoort)? Was de taak "
+"gemakkelijk of veeleisend, simpel of complex, strikt of vergevend?"
+
+#: index.php:53
+msgid "Physical Demand"
+msgstr "Fysieke Eisen"
+
+#: index.php:56
+msgid ""
+"How much physical activity was required (e.g. pushing, pulling, turning, "
+"controlling, activating, etc)? Was the task easy or demanding, slow or "
+"brisk, slack or strenuous, restful or laborious?"
+msgstr ""
+"Hoeveel fysieke activiteit was er vereist (bv. duwen, trekken, draaien, "
+"controlleren, activeren, enzovoort)? Was de taak gemakkelijk of veeleisend, "
+"traag of vlug, licht of zwaar, rustgevend of arbeidsintensief?"
+
+#: index.php:58
+msgid "Temporal Demand"
+msgstr "Tijdseisen"
+
+#: index.php:61
+msgid ""
+"How much time pressure did you feel due to the rate of pace at which the "
+"tasks or task elements occurred? Was the pace slow and leisurely or rapid "
+"and frantic?"
+msgstr ""
+"Hoeveel tijdsdruk voelde je door de snelheid waarmee de taak of taken "
+"moesten gebeuren? Was het ritme traag en op het gemak, of snel en gehaast?"
+
+#: index.php:63
+msgid "Performance"
+msgstr "Prestatie"
+
+#: index.php:64
+msgid "Good"
+msgstr "Goed"
+
+#: index.php:65
+msgid "Poor"
+msgstr "Slecht"
+
+#: index.php:66
+msgid ""
+"How successful do you think you were in accomplishing the goals of the task "
+"set by the experimenter (or yourself)? How satisfied were you with your "
+"performance in accomplishing these goals?"
+msgstr ""
+"Hoe succesvol denk je dat je was in het bereiken van de doelen vooropgesteld "
+"door de proefleider (of door jezelf)? Hoe tevreden was je met je "
+"performantie in het bereiken van deze doelen?"
+
+#: index.php:68
+msgid "Effort"
+msgstr "Inspanning"
+
+#: index.php:71
+msgid ""
+"How hard did you have to work (mentally and physically) to accomplish your "
+"level of performance?"
+msgstr ""
+"Hoe hard moest je werken (mentaal en fysiek) om jouw niveau van performantie "
+"te bereiken?"
+
+#: index.php:73
+msgid "Frustration"
+msgstr "Frustratie"
+
+#: index.php:76
+msgid ""
+"How insecure, discouraged, irritated, stressed and annoyed versus secure, "
+"gratified, content, relaxed and complacent did you feel during the task?"
+msgstr ""
+"Hoe onzeker, ontmoedigd, geirriteerd, gestrest en geergerd versus zeker, "
+"bevredigd, tevreden, ontspannen en zelfvoldaan voelde je tijdens de taak?"
+
+#: index.php:78
+msgid "A value must be selected for every scale!"
+msgstr "Een waarde moet geselecteerd worden voor elke schaal!"
+
+#: index.php:121
+msgid ""
+"Click on each scale at the point that best indicates your experience of the "
+"task."
+msgstr ""
+"Klik voor elke schaal op het punt dat jouw ervaring met de taak het beste "
+"aangeeft."
+
+#: index.php:123
+msgid ""
+"In other words: think back on what was easy and what was difficult or "
+"annoying about the task. How low or high were the mental demands, physical "
+"demands, etc... Drag your cursor over the question marks for more "
+"information."
+msgstr ""
+"Met andere woorden: denk terug aan wat er gemakkelijk was en wat er lastig "
+"was aan de taak. Hoe laag of hoog waren de mentale eisen, fysieke eisen, "
+"enzovoort... Sleep je cursor over de vraagtekens voor meer uitleg."
+
+#: index.php:125
+msgid ""
+"There are no right or wrong answers. If something is not entirely clear, "
+"follow your intuition."
+msgstr ""
+"Er zijn geen juiste of foute antwoorden. Als er iets niet helemaal duidelijk "
+"is, volg dan je intuitie."
+
+#: index.php:135 index.php:145
+msgid "Next"
+msgstr "Continue"
+
+#: index.php:140
+msgid ""
+"One each of the following 15 screens, click on the scale title that "
+"represents the more important contributor to workload for the task."
+msgstr ""
+"Voor elk van de volgende 15 schermen, klik op de factor die meer bijdraagt "
+"aan de werklast van de taak."
+
+#: index.php:142 index.php:152
+msgid "In other words: which factor made the task more tedious than the other?"
+msgstr ""
+"Met andere woorden: welke factor maakte het bijhouden van je dromen meer "
+"lastiger dan de andere?"
+
+#: index.php:150
+msgid ""
+"Click on the factor that represents the more important contributor to "
+"workload for the task."
+msgstr "Klik op de factor die meer bijdraagt aan de werklast van de taak."
+
+#: index.php:168
+msgid "or"
+msgstr "oder"
+
+#: index.php:184
+msgid "Results"
+msgstr "Resultaten"
+
+#: index.php:187
+msgid "All done!"
+msgstr "Klaar!"
+
+#: index.php:187
+msgid "Results submitted. Thank you for participating."
+msgstr "Resultaten verzonden. Bedankt voor je deelname."
+
+#: index.php:191
+msgid "Close"
+msgstr "Sluiten"
+
+#: index.php:196
+msgid "Error!"
+msgstr "Fout!"
+
+#: index.php:196
+msgid "Something went wrong when submitting the results:"
+msgstr "Iets ging mis bij het verzenden van de resultaten:"
