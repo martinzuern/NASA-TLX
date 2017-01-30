@@ -3,7 +3,13 @@ session_start();
 
 require_once('config.php');
 
-if ($check_ids && !$dynamic_participants && (empty($_GET['id']) || !in_array($_GET['id'], $participants)))
+if (!isset($_GET['id']) OR strlen($_GET['id']) < 1)
+  die(json_encode(array(
+    'status' => 'error',
+    'msg' => 'No ID submitted!'
+  )));
+
+if (count($participants) > 0 && !in_array($_GET['id'], $participants))
   die(json_encode(array(
     'status' => 'error',
     'msg' => 'Invalid participant!'
