@@ -7,5 +7,6 @@ $check_ids = false;
 $showCloseButton = true;
 $showResults = false;
 
+$defaultLang = 'de';
 
 $participants = array();

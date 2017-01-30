@@ -1,17 +1,18 @@
 <?php
+require_once('config.php');
+
 session_start();
 $token = md5(uniqid(rand(), TRUE));
 $_SESSION['token'] = $token;
 $_SESSION['token_time'] = time();
 
 // Specify location of translation tables
-// Set language to German
-putenv('LC_ALL=de_DE');
-setlocale(LC_ALL, 'de_DE');
-bindtextdomain("Nasa-TLX", "./locale");
-textdomain("Nasa-TLX");
-
-require_once('config.php');
+$language = isset($_GET['lang']) ? $_GET['lang'] : $defaultLang;
+putenv("LANG=$language");
+setlocale(LC_ALL, $language);
+bindtextdomain('messages', "./locale");
+textdomain('messages');
+bind_textdomain_codeset('messages', 'UTF-8');
 
 if(!$dynamic_participants AND (!isset($_GET['id']) OR strlen($_GET['id']) < 1)) {
   die(gettext("You have to submit an ID."));
